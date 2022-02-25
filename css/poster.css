@@ -30,6 +30,16 @@ html {
     100% {transform: translateY(0);}
 }
 
+.movie-duration {
+    text-transform: uppercase;
+    animation: slide-from-top 2.5s ease-in-out forwards;
+    transform: translateY(-150px);
+ }
+
+ @keyframes slide-from-top {
+    100% {transform: translateY(0);}
+}
+
 
 .movie-poster-container img {
     margin-top: 2rem;
@@ -140,4 +150,62 @@ footer ul li a {
     text-transform: uppercase/*your code here*/;
     text-decoration: none;
     color: #777;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(85, 85, 85, 0.322);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+
+.modal-content {
+    background-color: blanchedalmond;
+    margin: 5% auto;
+    padding: 5rem;
+    width: 600px;
+    height: 600px;
+    animation: zoom-in 1s;
+
+}
+
+@keyframes zoom-in {
+    0% {transform:scale(0);}
+    100% {transform: scale(1);}
+}
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+
+.movie-poster-modal {
+    width: 300px;
+    border-radius: 14px
+}
+
+
+.movie-poster {
+    margin-top: 2rem;
+    height: 500px;
+    border-radius: 14px; 
+    cursor: pointer;
+}
+
+.movie-duration {
+    text-transform: uppercase;
+    animation: slide-from-top 2.5s ease-in-out forwards;
+    transform: translateY(-150px);
+ }
+
+ @keyframes slide-from-top {
+    100% {transform: translateY(0);}
 }
